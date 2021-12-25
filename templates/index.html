@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="card">
+                <h2>
+                    <i class="fa fa-map-marker"></i> 
+                    <span id="location">{{city_name}}</span>
+                </h2>
+                <h5 id="weather">{{desc}}</h5>
+                <h4><span id="temp"></span>{{temp}}<sup>o</sup>C</h4>
+                <h6>{{min_temp}}<sup>o</sup>C - {{max_temp}}<sup>o</sup>C</h6>
+                <h6>Humidity: {{humidity}}%</h6>
+                <img src="http://openweathermap.org/img/wn/{{icon}}@2x.png" alt="" />
+                <br>
+                <form action="/" method="post">
+                    <input type="text" placeholder="City Name" name="name"/>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

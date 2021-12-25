@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins', sans-seriff;
+	color: #fff;
+	background:  #343434;
+}
+.container {
+    width: 30%;
+}
+.card {
+    border-radius: 50px;
+    background: #343434;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    padding: 3%;
+    text-align: center;
+}
+.card h4 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+.card h5 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 1rem;
+}
+.card h6 {
+    font-size: 1.5rem;
+    font-weight: 75;
+    margin: 0 0;
+}
+/* button {
+    background-color: #343434;
+    color: white;
+    border: 2px solid;
+    margin: 5%
+} */
+input, select, textarea{
+    margin: 10px;
+    margin-top: 10%;
+    height: 2rem;
+    width: 15rem;
+    background-color: #e0e0e0;
+    border: 0;
+    font-family: 'Poppins', sans-seriff;
+    font-size: 15px;
+    border-radius: 1rem;
+    align-items: center;
+    text-align: center;
+    /* box-shadow: 10px 4px 18px #666666, 5px 5px 18px #666666; */
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+}
+button {
+    display: inline-block;
+    width: 50px;
+    margin: 10px auto;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: #9c9c9d;
+    height: 50px;
+    border-radius: 20%;
+    /* box-shadow: 10px 4px 18px #666666, 5px 5px 12px #666666; */
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    transition: 0.3s;
+}
+img {
+    margin: 1rem 0 0 0;
+    background: #bbbbbb;
+    height: 75px;
+    border-radius: 20%;
+}
